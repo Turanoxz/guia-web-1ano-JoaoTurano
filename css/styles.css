@@ -1,0 +1,42 @@
+/* Reset CSS universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis globais para o tema claro */
+:root {
+    --primary-color: #2563EB;
+    --secondary-color: #10B981;
+    --text-color: #111827;
+    --bg-color: #F3F4F6;
+    --border-color: #E5E7EB;
+    --card-bg-color: #FFFFFF;
+    --font-title: 'Poppins', sans-serif;
+    --font-text: 'Inter', sans-serif;
+}
+
+/* Tema escuro */
+body.dark-theme {
+    --text-color: #F3F4F6;
+    --bg-color: #111827;
+    --border-color: #374151;
+    --card-bg-color: #1F2937;
+}
+
+/* Estilos base */
+body {
+    font-family: var(--font-text);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Estilos para títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
