@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Profissional de Desenvolvimento Web | João Turano</title>
+    <meta name="description" content="Guia profissional completo sobre desenvolvimento web: HTML, CSS, JavaScript, boas práticas e tecnologias">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Guia Profissional de Desenvolvimento Web</h1>
+            <button class="menu-hamburguer" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-principal" aria-label="Navegação principal">
+                <ul class="nav-links">
+                    <li><a href="#inicio" aria-current="page">Início</a></li>
+                    <li><a href="tecnologias.html">Tecnologias</a></li>
+                    <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                    <li><a href="fluxo.html">Fluxograma</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Domine o Desenvolvimento Web Profissional</h2>
+                <p>Um guia completo e profissional sobre HTML, CSS e JavaScript, com foco em boas práticas, acessibilidade e tecnologias modernas.</p>
+                <div class="hero-buttons">
+                    <a href="#fundamentos" class="btn-primary">Começar Agora</a>
+                    <button id="theme-toggle" class="btn-secondary" aria-label="Alternar tema claro/escuro">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"/>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="fundamentos" class="intro-cards">
+            <div class="container">
+                <h2>Os Três Pilares do Desenvolvimento Web</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>HTML: Estrutura e Semântica</h3>
+                        <p>HTML (HyperText Markup Language) é a linguagem que define a estrutura e o significado do conteúdo web:</p>
+                        <pre><code>&lt;main class="conteudo-principal"&gt;
+  &lt;article class="post"&gt;
+    &lt;h1&gt;Título do Post&lt;/h1&gt;
+    &lt;p&gt;Primeiro parágrafo...&lt;/p&gt;
+    &lt;img src="foto.jpg" 
+         alt="Descrição da imagem"
+         loading="lazy"&gt;
+  &lt;/article&gt;
+&lt;/main&gt;</code></pre>
+                        <ul class="tech-points">
+                            <li>Define a estrutura do documento</li>
+                            <li>Fornece significado ao conteúdo</li>
+                            <li>Base para acessibilidade</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="card">
+                        <h3>CSS: Estilo e Layout</h3>
+                        <p>CSS (Cascading Style Sheets) controla a apresentação visual e o layout dos elementos:</p>
+                        <pre><code>/* Variáveis e layout moderno */
+:root {
+  --primary: #2563eb;
+  --spacing: clamp(1rem, 2vw, 2rem);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 
+    repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing);
+  padding: var(--spacing);
+}</code></pre>
+                        <ul class="tech-points">
+                            <li>Controla estilos e layout</li>
+                            <li>Responsividade com Grid/Flex</li>
+                            <li>Animações e transições</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3>JavaScript: Interatividade</h3>
+                        <p>JavaScript torna as páginas interativas e dinâmicas:</p>
+                        <pre><code>// Módulo de tema escuro
+const themeToggle = document.querySelector(
+  '#theme-toggle'
+);
+
+function toggleTheme() {
+  document.body.classList.toggle('dark');
+  const isDark = document.body
+    .classList.contains('dark');
+  localStorage.setItem('theme', isDark);
+}
+
+themeToggle.addEventListener(
+  'click', 
+  toggleTheme
+);</code></pre>
+                        <ul class="tech-points">
+                            <li>Adiciona interatividade</li>
+                            <li>Manipula dados e DOM</li>
+                            <li>Gerencia estado da aplicação</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 João Turano. Todos os direitos reservados.</p>
+            <nav>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Voltar ao topo</a></li>
+                    <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

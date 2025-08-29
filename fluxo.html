@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxograma de Projeto Web | Guia Profissional de Desenvolvimento Web</title>
+    <meta name="description" content="Fluxograma interativo das etapas de um projeto web completo: da ideia ao deploy">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Guia Profissional de Desenvolvimento Web</h1>
+            <button class="menu-hamburguer" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-principal" aria-label="Navegação principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="tecnologias.html">Tecnologias</a></li>
+                    <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                    <li><a href="fluxo.html" aria-current="page">Fluxograma</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="flow-hero">
+            <div class="container">
+                <h2>Fluxograma de Projeto Web</h2>
+                <p>Da ideia ao deploy: entenda cada etapa do desenvolvimento web profissional e seus desafios.</p>
+            </div>
+        </section>
+
+        <section class="flow-diagram">
+            <div class="container">
+                <div class="diagram-container">
+                    <svg width="100%" height="400" id="flow-svg">
+                        <!-- O SVG será preenchido via JavaScript -->
+                    </svg>
+                </div>
+
+                <div class="timeline" aria-label="Linha do tempo do projeto">
+                    <div class="timeline-track">
+                        <!-- Etapas serão preenchidas via JavaScript -->
+                    </div>
+                </div>
+
+                <div class="stage-details" aria-live="polite">
+                    <h3>Selecione uma etapa para ver mais detalhes</h3>
+                    <div class="stage-content">
+                        <!-- Detalhes serão preenchidos via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 João Turano. Todos os direitos reservados.</p>
+            <nav>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/flowchart.js"></script>
+</body>
+</html>

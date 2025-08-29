@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias Web | Guia Profissional de Desenvolvimento Web</title>
+    <meta name="description" content="Panorama completo das principais tecnologias web: frameworks, bancos de dados, DevOps e mais">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Guia Profissional de Desenvolvimento Web</h1>
+            <button class="menu-hamburguer" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-principal" aria-label="Navegação principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="tecnologias.html" aria-current="page">Tecnologias</a></li>
+                    <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                    <li><a href="fluxo.html">Fluxograma</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="tech-hero">
+            <div class="container">
+                <h2>Panorama de Tecnologias Web</h2>
+                <p>Explore as principais tecnologias do desenvolvimento web moderno e descubra quando usar cada uma.</p>
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="search" id="tech-search" placeholder="Buscar tecnologia..." 
+                               aria-label="Buscar tecnologia"
+                               accesskey="/">
+                        <kbd class="shortcut-hint">/</kbd>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-content">
+            <div class="container">
+                <div class="filters" role="group" aria-label="Filtros de categoria">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">
+                        Todas
+                    </button>
+                    <button class="filter-btn" data-filter="frontend" aria-pressed="false">
+                        Frontend
+                    </button>
+                    <button class="filter-btn" data-filter="backend" aria-pressed="false">
+                        Backend
+                    </button>
+                    <button class="filter-btn" data-filter="database" aria-pressed="false">
+                        Banco de Dados
+                    </button>
+                    <button class="filter-btn" data-filter="devops" aria-pressed="false">
+                        DevOps
+                    </button>
+                    <button class="filter-btn" data-filter="testing" aria-pressed="false">
+                        Testes
+                    </button>
+                </div>
+
+                <div class="export-container">
+                    <button id="export-csv" class="btn-secondary">
+                        Exportar Seleção CSV
+                    </button>
+                </div>
+
+                <div class="tech-grid" role="list">
+                    <!-- Cards serão inseridos via JavaScript -->
+                </div>
+
+                <p id="no-results" class="no-results hidden">
+                    Nenhuma tecnologia encontrada com os filtros atuais.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div id="tech-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Fechar modal">×</button>
+            <h2 id="modal-title"></h2>
+            <div class="modal-body">
+                <!-- Conteúdo do modal será inserido via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 João Turano. Todos os direitos reservados.</p>
+            <nav>
+                <ul class="footer-links">
+                    <li><a href="#top">Voltar ao topo</a></li>
+                    <li><a href="index.html">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/technologies.js"></script>
+</body>
+</html>

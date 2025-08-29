@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas Práticas — Guia Profissional de Desenvolvimento Web</title>
+    <meta name="description" content="Resumo prático de boas práticas para desenvolvimento web: semântica, acessibilidade, performance e organização.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="best-practices-page">
+    <header>
+        <div class="container">
+            <h1>Guia Profissional de Desenvolvimento Web</h1>
+            <button class="menu-hamburguer" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-principal" aria-label="Navegação principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="tecnologias.html">Tecnologias</a></li>
+                    <li><a href="boas-praticas.html" aria-current="page">Boas Práticas</a></li>
+                    <li><a href="fluxo.html">Fluxograma</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h2>Boas Práticas para Desenvolvimento Web</h2>
+                <p>Um guia completo de boas práticas para desenvolvimento web moderno e profissional.</p>
+            </div>
+        </section>
+
+        <section class="best-practices">
+            <div class="container">
+                <nav class="section-nav" aria-label="Navegação rápida">
+                    <a href="#semantica">Semântica</a>
+                    <a href="#acessibilidade">Acessibilidade</a>
+                    <a href="#desempenho">Desempenho</a>
+                    <a href="#organizacao">Organização</a>
+                </nav>
+
+    <main>
+                <section id="semantica" class="practice-section">
+                    <h3>1. Estrutura semântica (HTML)</h3>
+                    <p>Use elementos semânticos para melhorar a legibilidade do código e a acessibilidade:</p>
+                    <div class="example-box">
+                        <pre><code>&lt;header&gt;
+  &lt;h1&gt;Título&lt;/h1&gt;
+&lt;/header&gt;
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Notícia&lt;/h2&gt;
+    &lt;p&gt;Texto da notícia...&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+&lt;footer&gt;Informações de rodapé&lt;/footer&gt;</code></pre>
+                    </div>
+                </section>
+
+                <section id="acessibilidade" class="practice-section">
+                    <h3>2. Acessibilidade (a11y)</h3>
+                    <ul class="check-list">
+                        <li>Forneça <strong>texto alternativo</strong> em imagens (<code>alt</code>)</li>
+                        <li>Use contraste suficiente entre texto e fundo</li>
+                        <li>Garanta navegação por teclado</li>
+                        <li>Use atributos ARIA apropriadamente</li>
+                        <li>Permita redimensionamento de texto</li>
+                    </ul>
+                </section>
+
+                <section id="desempenho" class="practice-section">
+                    <h3>3. Performance</h3>
+                    <p>Otimize recursos e carregamento:</p>
+                    <ul class="check-list">
+                        <li>Minifique CSS/JS e otimize imagens</li>
+                        <li>Implemente carregamento assíncrono</li>
+                        <li>Use <code>preload</code> para recursos críticos</li>
+                        <li>Configure cache e compressão</li>
+                    </ul>
+                </section>
+
+                <section id="organizacao" class="practice-section">
+                    <h3>4. Organização de projeto</h3>
+                    <ul class="check-list">
+                        <li>Estruture pastas logicamente (<code>css/</code>, <code>js/</code>, <code>assets/</code>)</li>
+                        <li>Use convenções de nomenclatura claras</li>
+                        <li>Mantenha documentação atualizada</li>
+                        <li>Implemente linting e formatação</li>
+                    </ul>
+                </section>
+
+      <section id="controle-qualidade">
+        <h2>5. Controle de versão e deploy</h2>
+        <ul class="check">
+          <li>Faça commits pequenos e com mensagens descritivas.</li>
+          <li>Use branches por feature e pull requests para revisão de código.</li>
+          <li>Configure CI para testes e build automático antes do deploy.</li>
+        </ul>
+      </section>
+
+      <section id="checklist">
+        <h2>Checklist rápido antes do deploy</h2>
+        <ul class="check">
+          <li>Valide HTML/CSS (W3C) e corrija erros importantes.</li>
+          <li>Verifique performance (Lighthouse) e acessibilidade mínima.</li>
+          <li>Teste responsividade em tamanhos comuns (mobile/tablet/desktop).</li>
+          <li>Confirme variáveis de ambiente e chaves não estão no repositório.</li>
+        </ul>
+      </section>
+
+      <section id="recursos">
+        <h2>Recursos e exemplos</h2>
+        <p>Exemplo simples de botão acessível:</p>
+        <pre><code>&lt;button type="button" aria-pressed="false"&gt;Curtir&lt;/button&gt;</code></pre>
+        <p>Exemplo de lazy loading de imagem:</p>
+        <pre><code>&lt;img src="imagem.jpg" loading="lazy" alt="Descrição resumida"&gt;</code></pre>
+      </section>
+
+    </main>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 João Turano. Todos os direitos reservados.</p>
+            <nav>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/best-practices.js"></script>
+</body>
+</html>
